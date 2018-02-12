@@ -6,11 +6,11 @@ def main():
     driver = webdriver.Remote(
         command_executor='http://127.0.0.1:4723/wd/hub',
         desired_capabilities={
-            'platformName': 'iOS',
-            'platformVersion': '11.0',
-            'deviceName': 'iPad Pro (9.7-inch)',
-            'browserName': 'Safari',
-            'udid': 'CEF5614C-6A13-4FF0-97A7-8F05BBB6BF0C',
+            'platformName': 'platformNamePlaceholder',
+            'platformVersion': 'platformVersionPlaceholder',
+            'deviceName': 'deviceNamePlaceholder',
+            'browserName' 'browserNamePlaceholder'
+            'udid': 'udidPlaceholder',
             'newCommandTimeout': 7200,
             'fullReset': True,
             'noReset': False,
