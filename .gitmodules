@@ -1,6 +1,6 @@
 [submodule "common"]
 	path = common
 	url = https://stash.r.mutualmobile.com/scm/aut/common.git
-[submodule "southwire-shared"]
-	path = southwire-shared
-	url = https://stash.r.mutualmobile.com/scm/aut/southwire-shared.git
+[submodule "southwire-pkg-uiautomation-webdriver"]
+	path = southwire-pkg-uiautomation-webdriver
+	url = https://stash.r.mutualmobile.com/scm/aut/southwire-pkg-uiautomation-webdriver.git
