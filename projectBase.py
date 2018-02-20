@@ -1,6 +1,6 @@
 from appium import webdriver
 from unittest import TestCase
-from common import *
+from uiautomation_pkg_common_webdriver import *
 
 
 class ProjectBase(TestCase):

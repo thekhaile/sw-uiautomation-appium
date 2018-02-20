@@ -1,5 +1,5 @@
 from appium import webdriver
-from common import *
+from uiautomation_pkg_common_webdriver import *
 
 
 def main():
