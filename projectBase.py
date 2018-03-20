@@ -48,6 +48,7 @@ class ProjectBase(TestCase):
         self.assertion = Assert()
         self.app.switchToWebview()
         self.isMobile = self.app.isMobile()
+        self.isIos = self.app.isIos()
         self.isChromium = False
         if self.driver.current_context == 'CHROMIUM':
             self.isChromium = True
