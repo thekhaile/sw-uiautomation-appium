@@ -38,7 +38,6 @@ class ProjectBase(TestCase):
         #         'platformVersion': '6.0.1',
         #         'deviceName': 'Nexus 7',
         #         'browserName': 'Chrome',
-        #         'chromedriverExecutable': '/Users/khaile/Develop/appiumTest/node_modules/appium-chromedriver/chromedriver/mac/chromedriver',
         #         'newCommandTimeout': 7200
         #     })
         self.driver.implicitly_wait(5)
