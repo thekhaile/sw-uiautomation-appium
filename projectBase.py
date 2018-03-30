@@ -54,4 +54,9 @@ class ProjectBase(TestCase):
             self.isChromium = True
 
     def tearDown(self):
+        if self.assertion.didThrowError():
+            try:
+                self.app.saveScreenshot(self.id(), path=self.screenshotPath)
+            except:
+                pass
         self.driver.quit()
