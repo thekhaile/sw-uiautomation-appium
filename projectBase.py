@@ -50,6 +50,7 @@ class ProjectBase(TestCase):
         self.isMobile = self.app.isMobile()
         self.isIos = self.app.isIos()
         self.isChromium = self.app.isChromium()
+        self.isSafari = self.app.isSafari()
 
     def tearDown(self):
         if self.assertion.didThrowError():

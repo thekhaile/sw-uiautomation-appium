@@ -49,6 +49,7 @@ class Flow():
         self.isMobile = self.app.isMobile()
         self.isIos = self.app.isIos()
         self.isChromium = self.app.isChromium()
+        self.isSafari = self.app.isSafari()
 
         # Initializing the objects specific to the project
         self.authentication = Authentication(self)
