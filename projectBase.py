@@ -49,9 +49,7 @@ class ProjectBase(TestCase):
         self.app.switchToWebview()
         self.isMobile = self.app.isMobile()
         self.isIos = self.app.isIos()
-        self.isChromium = False
-        if self.driver.current_context == 'CHROMIUM':
-            self.isChromium = True
+        self.isChromium = self.app.isChromium()
 
     def tearDown(self):
         if self.assertion.didThrowError():
