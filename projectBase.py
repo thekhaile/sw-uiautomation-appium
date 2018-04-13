@@ -5,6 +5,7 @@ from uiautomation_pkg_common_webdriver import *
 
 class ProjectBase(TestCase):
     def setUp(self):
+        ### Below is the template to set up your test run
         self.driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
             desired_capabilities={
@@ -18,6 +19,7 @@ class ProjectBase(TestCase):
                 'noReset': False,
                 'automationName': 'XCUITest'
             })
+        # ### Below is an example of a set up for iOS device
         # self.driver = webdriver.Remote(
         #     command_executor='http://127.0.0.1:4723/wd/hub',
         #     desired_capabilities={
@@ -31,6 +33,7 @@ class ProjectBase(TestCase):
         #         'noReset': False,
         #         'automationName': 'XCUITest'
         #     })
+        # ### Below is an example of a set up for Android device
         # self.driver = webdriver.Remote(
         #     command_executor='http://127.0.0.1:4723/wd/hub',
         #     desired_capabilities={
