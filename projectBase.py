@@ -50,11 +50,21 @@ class ProjectBase(TestCase):
         self.isIos = self.app.isIos()
         self.isChromium = self.app.isChromium()
         self.isSafari = self.app.isSafari()
+        self.screenshotPath = '../../screenshots/'
+        self.app.createScreenshotDir(self.screenshotPath)
 
     def tearDown(self):
         if self.assertion.didThrowError():
+            resultFlag = False
             try:
                 self.app.saveScreenshot(self.id(), path=self.screenshotPath)
             except:
                 pass
-        self.driver.quit()
+        else:
+            resultFlag = True
+        try:
+            self.client.updateTestrail(self.caseId, resultFlag)
+        except:
+            pass
+        finally:
+            self.driver.quit()
